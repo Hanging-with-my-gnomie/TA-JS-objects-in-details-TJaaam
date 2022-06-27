@@ -16,6 +16,58 @@ For each different ways of creating object write different solutions.
 - Pseudoclassical Pattern (Put methods inside F.prototype and use `new` to call function)
 - Create using class
 - Write test by creating two objects also test both methods.
+``js
+ function createQuestion(title,options,correctAnswerIndex){
+  let Question = object.create(createQuestion.prototype);
+  Question.title = title;
+  Question.options = options;
+  Question.correctAnswerIndex = correctAnswerIndex;
+ }
+ createQuestion.prototype = {
+     Question.isAnswerCorrect =function(index){
+      return index===Question.correctAnswerIndex;
+     };
+     Question.getCorrectAnswer(){
+      return Question.option[Question.correctAnswerIndex];
+     }
+     return Question;
+ }
+``
+
+``js
+ function createQuestion(title,options,correctAnswerIndex){
+  let Question = object.create(createQuestion.prototype);
+  this.title = title;
+  this.options = options;
+  this.correctAnswerIndex = correctAnswerIndex;
+ }
+ createQuestion.prototype = {
+     this.isAnswerCorrect =function(index){
+      return index===Question.correctAnswerIndex;
+     };
+     Question.getCorrectAnswer(){
+      return this.option[Question.correctAnswerIndex];
+     }
+     return Question;
+ }
+``
+``js
+  class question {
+    constructor(title,options,correctAnswerIndex){
+      this.title = title;
+      this.options = options;
+      this.correctAnswerIndex = correctAnswerIndex;
+    }
+    isAnswerCorrect(index){
+      return index===Question.correctAnswerIndex;
+    }
+    getcorrectAnswer(index){
+      return this.option[Question.correctAnswerIndex];
+    }
+    return question;
+  }
+
+
 
 ### To test use the following data
 
