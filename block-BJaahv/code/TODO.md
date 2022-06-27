@@ -10,6 +10,10 @@ Create a object using the following patterns given below.
 - [ ] Using Class
 
 ## Requirements
+``js
+object creation
+``
+
 
 Create User (class/function) with the following properties.
 
