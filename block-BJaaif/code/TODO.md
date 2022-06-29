@@ -68,3 +68,4 @@ Make sure that `adminFactory` objects have access to `adminFunctionStore` method
 #### Challenge 5/5
 
 Create a method called `sharePublicMessage` that logs 'Welcome users!' and will be available to `adminFactory` objects, but not `userFactory` objects. Do not add this method directly in the `adminFactory` function.
+code
