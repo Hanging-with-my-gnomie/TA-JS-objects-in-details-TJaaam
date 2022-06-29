@@ -16,6 +16,24 @@ Methods
 - `changeLocation(newLocation)` - accepts location and updates the location of the animal
 
 - `summary()` - returns `I live in ${location} and I have ${numberOfLegs}`
+``js
+class Eat  {
+        constructor(location, `numberOfLegs){
+            this.location = location;
+            this.numberOfLegs = numberOfLegs;
+        }
+        eat(){
+            console.log(`I live in ${this.location} and I can eat`)
+        }
+      changeLocation(Location){
+        return l`${this.location};
+      }
+      summary(){
+        returns `I live in ${this.location} and I have ${this.numberOfLegs}`
+
+      }  
+}
+``
 
 #### Dog
 
