@@ -13,3 +13,4 @@ In this assignment you have to add methods to the `prototype` of Array. Array is
 5. Add a method named `intersection` to Array.prototype. The method intersection will accept an array and returns a new array that will contain only element that is common in both the array.
 
 6. Add a method named `chunk` to Array.prototype. The method chunk will accept one parameter `length` and split the array into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements. `length` should default to 1.
+code
