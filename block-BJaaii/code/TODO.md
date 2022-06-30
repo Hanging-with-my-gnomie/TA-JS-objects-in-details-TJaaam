@@ -13,6 +13,27 @@ Queue
 Data:
 
 - `stack`
+``js
+  class stack{
+    push(){
+
+    }
+    pop(){
+
+    }
+    peek(){
+
+    }
+    reverse(){
+
+    }
+    isEmpty(){
+
+    }
+    displaystack(){
+        
+    }
+  }
 
 Methods:
 
