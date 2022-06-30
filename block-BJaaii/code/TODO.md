@@ -15,23 +15,31 @@ Data:
 - `stack`
 ``js
   class stack{
-    push(){
-
+    constructor(){
+        this.stack = [];
+    }
+    push(elm){
+        this.stack.push(elm);
+        return this.stack;
     }
     pop(){
-
+    this.stack.pop();
+    return this.stack;
     }
-    peek(){
-
+    peek(index = this.stack.length-1){
+     return this.stack[index];
     }
     reverse(){
-
+     return this.stack.reverse();
     }
     isEmpty(){
-
+       return !(this.stack.length>0);
     }
     displaystack(){
-        
+       return this.stack.join(" ");
+    }
+    get length(){
+        return this.stack.length;
     }
   }
 
@@ -72,6 +80,15 @@ console.log(myStack.isEmpty()); // true
 Data:
 
 - `queue`
+``js
+  class queue{
+    constructor(){
+   this.queue = [];
+    }
+   enqueue(item){
+    this.queue.add(elm);
+   }
+  }
 
 Methods:
 
