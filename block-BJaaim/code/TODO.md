@@ -12,7 +12,11 @@ DATA:
 - Correct answer
 
 METHODS:
-
+class Question{
+  constructor(){
+    
+  }
+}
 - isCorrect(answer)
 
 Check if the given answer is correct or not. It will accept one answer and return `true` is the answer is correct otherwise false.
